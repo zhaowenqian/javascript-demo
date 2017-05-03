@@ -1,5 +1,10 @@
 Monday        9:30-10:15 ESTR2002   12:30-13:15 CSCI2100
+<br>
 Tuesday      10:30-11:15 ELTU2014   12:30-14:15 CSCI2100   14:30-16:15 ENGG2601
+<br>
 Wednesday     9:30-11:15 ESTR2002   12:30-14:15 CLCC2703
+<br>
 Thursday      8:30-10:15 ELTU2014   11:30-13:15 UGFN1000
+<br>
 Friday       11:30-13:15 GEUC1000
+<br>
