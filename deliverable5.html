@@ -15,12 +15,19 @@
     $('.getcv').click(function() {
         $(".cv").load("https://raw.githubusercontent.com/zhaowenqian/javascript-demo/master/mycv.txt");
     });
+    $('.gettt').click(function() {
+        $(".tt").load("https://raw.githubusercontent.com/zhaowenqian/javascript-demo/master/timetable.txt");
+    });
 });
   </script>
   
 </head>
 <body>
   <button type="button" class="getcv">show my cv</button>
+   <button type="button" class="gettt">show my cv</button>
+   <h>My CV</h>
   <div class="cv"></div>
+  <h>My Timetable</h>
+  <div class="tt"></div>
 </body>
 </html>
