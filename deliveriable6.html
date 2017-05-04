@@ -1,0 +1,64 @@
+<html>
+<head>
+	   <title>register form</title>
+   <meta charset="utf-8">
+  
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script>
+   var main=function(){
+   	var time;
+   	time=0;
+    $('.btn').click(function(){
+        time=2;
+        var post=$('.status-box').val();
+        $('<h>').text("Succesful!!!").prependTo('.posts');
+         $('.status-box').val('');
+      $('.counter').text(15);
+           $('.btn').addClass('disabled');
+        });
+  
+   $('.status-box').keyup(function(){
+      
+       var postlength=$(this).val().length;
+       var charactersleft=15-postlength;
+       $('.counter').text(charactersleft);
+       if(charactersleft<0||time!==0){
+          $('.btn').addClass('disabled');   
+       }
+       else if(charactersleft===15){
+           $('.btn').addClass('disabled'); 
+       }
+       else{
+             $('.btn').removeClass('disabled'); 
+           }
+       
+          });
+      $('.btn').addClass('disabled');
+}   
+     
+$(document).ready(main);
+</script>
+</head>
+
+<body style="background-color:#F0F8FF">
+	<h1 style="color:#2F4F4F;text-align:center">Register for yourself</h1>
+	    <div class="container">
+      <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="1" placeholder="creat new username less than 15 charaters"></textarea>
+        </div>
+      </form>
+      <div class="button-group pull-right">
+        <p class="counter">15</p>
+        <a href="#" class="btn btn-primary">create</a>
+      </div>
+    
+      <ul class="posts" style="color:#2F4F4F;text-align:center">
+      </ul>
+    </div>
+</body>
+</html>
